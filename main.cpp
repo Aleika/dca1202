@@ -9,13 +9,16 @@ using namespace std;
 void TestePoint(void);
 void TestePoligono(void);
 void TesteRetangulo(void);
-Point CM(Point p1, Retangulo ret);
+Point CM(float x, float y, float largura, float altura);
 
 int main()
 {
     Retangulo ret(0,0,4,3);
-    Point p(2,1.5);
+    Point cm;
     ret.imprime();
+
+    cm = CM(0,0,3,4);
+    cm.imprime();
 
     cout << "Area: " << ret.area()<<endl;
 
@@ -26,7 +29,7 @@ int main()
     cout << "Area com translacao: " << ret.area()<<endl;
 
     cout<< "Rotacao "<<endl;
-    ret.rotaciona(p,M_PI/6);
+    ret.rotaciona(cm,M_PI/6);
     ret.imprime();
 
 }
@@ -119,3 +122,14 @@ void TesteRetangulo(){
     ret.imprime();
 }
 
+Point CM(float x, float y, float largura, float altura){
+    Point cm(0,0);
+
+    float coord_x, coord_y;
+
+    coord_y = (2*x-altura)/2;
+    coord_x = (2*y+largura)/2;
+
+    cm.setXY(coord_x,coord_y);
+    return cm;
+}
