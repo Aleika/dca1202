@@ -14,7 +14,7 @@ public:
     Retangulo();
     /**
      * @brief Retangulo Construtor no qual o retângulo será totalmente inicializado de acordo com os parâmetros fornecidos,
-     * lembrando que por ser um polígono, ele será formado 4 pontos iniciados em sentido anti-horário.
+     * lembrando que por ser um polígono, ele será formado por 4 pontos iniciados em sentido anti-horário.
      * @param x Posicão X do primeiro ponto do retângulo (superior esquerdo) que será o referêncial para os pontos seguintes.
      * @param y Posição Y do primeiro ponto do retângulo (superior esquerdo) que será o referêncial para os pontos seguintes.
      * @param largura Largura do retângulo (Variação no eixo X).
