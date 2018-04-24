@@ -3,7 +3,8 @@
 #include "point.h"
 
 /**
- * @brief A classe Poligono é utilizada para armazenar e fazer operações com um vetor de pontos Point.
+ * @brief A classe Poligono é utilizada para armazenar e fazer operações com um vetor de pontos Point,
+ * esse vetor irá representar um polígono e seus pontos serão inicializados em sentido anti-horario.
  */
 class Poligono
 {

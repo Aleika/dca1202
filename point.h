@@ -2,7 +2,7 @@
 #define POINT_H
 
 /**
- * @brief The Point class serve para realizar operações com pontos do tipo float
+ * @brief A classe Point serve para realizar operações com pontos do tipo float
  */
 class Point
 {
